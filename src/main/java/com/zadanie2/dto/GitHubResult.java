@@ -1,4 +1,7 @@
 package com.zadanie2.dto;
 
-public record GitHubResult() {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record GitHubResult(String name, boolean fork, Owner owner) {
 }

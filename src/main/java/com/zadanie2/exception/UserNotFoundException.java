@@ -1,4 +1,7 @@
-package com.zadanie2.service;
+package com.zadanie2.exception;
 
-public class UserNotFoundException {
+public class UserNotFoundException extends RuntimeException {
+    public UserNotFoundException(String message) {
+        super(message);
+    }
 }

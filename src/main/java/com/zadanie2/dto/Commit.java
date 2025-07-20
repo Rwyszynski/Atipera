@@ -1,7 +1,7 @@
-package com.zadanie2.entity;
+package com.zadanie2.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record Commit(String sha) {
+public record Commit(String name, String sha) {
 }
